@@ -1,59 +1,40 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import "../Style.scss";
-import { Link } from "react-router-dom";
 import Image from "../Image/l.png";
+import Grid from "@mui/material/Grid";
 import KoszykImage from "./KoszykImage/koszyk.svg";
-import MojeKonto from "./MojeKonto/mojekonto.svg";
+import IconButton from "./IconButton";
+import MojeKont from "./MojeKonto/mojekonto.svg";
+import CommonButton from "./CommonButton";
+
 const Home = () => {
   return (
     <>
-      <Box
-        className="container"
-        sx={{
-          width: 1920,
-          height: 1279,
-        }}
+      <Grid
+        container
+        alignContent="flex-start"
+        alignItems="center"
+        justify="flex-start"
+        sx={{ mt: 2 }}
       >
-        <Box
-          className="navigation"
-          sx={{
-            width: 1920,
-            height: 81,
-          }}
-        >
-          <img className="logo" src={Image} />
-          <Link className="first" to="/">
-            Steak
-          </Link>
-          <Link className="second" to="/">
-            Burgers
-          </Link>
-          <Link className="third" to="/">
-            French fries
-          </Link>
-          <Link className="fourth" to="/">
-            Drinks
-          </Link>
-          <Link className="fifth" to="/">
-            Gdzie dowozimy?
-          </Link>
-          <Link className="sixth" to="/">
-            kontakt
-          </Link>
-          <img className="konto" src={MojeKonto} />
-          <Link className="seventh" to="/">
-            Moje konto
-          </Link>
-          <img className="koszyk" src={KoszykImage} />
-          <Link className="eighth" to="/">
-            Koszyk
-          </Link>
-          <button className="ninth" to="/">
-            <p className="button-text">Zamow</p>
-          </button>
-        </Box>
-      </Box>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={1}>
+          <img src={Image} />
+        </Grid>
+        <Grid item xs={7}>
+          <CommonButton path={"/"} buttonName={"Steak"} />
+          <CommonButton path={"/"} buttonName={"Burgers"} />
+          <CommonButton path={"/"} buttonName={"French fries"} />
+          <CommonButton path={"/"} buttonName={"Drinks"} />
+          <CommonButton path={"/"} buttonName={"Gdzie dowozimy?"} />
+          <CommonButton path={"/"} buttonName={"Kontakt"} />
+        </Grid>
+        <Grid item xs={3}>
+          <IconButton icon={MojeKont} path={"/"} buttonName={"Moje Konto"} />
+          <IconButton icon={KoszykImage} path={"/"} buttonName={"Koszyk"} />
+          <IconButton path={"/"} buttonName={"Zamow"} />
+        </Grid>
+      </Grid>
     </>
   );
 };

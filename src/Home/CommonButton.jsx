@@ -2,21 +2,21 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 
 const CommonButton = (props) => {
-  const { className, buttonName, icon, path, style } = props;
+  const { buttonName, path, style, textColor } = props;
   return (
     <>
       <Button
         component={Link}
         to={path}
-        color="secondary"
-        disableElevation
-        disableRipple
-        underline
-        className={className}
-        size="large"
-        style={style}
+        style={{
+          textTransform: "none",
+          fontstyle: "normal",
+          fontweight: 400,
+          fontsize: 14,
+          lineheight: 14,
+          textColor: textColor,
+        }}
       >
-        {icon}
         <span>{buttonName}</span>
       </Button>
     </>

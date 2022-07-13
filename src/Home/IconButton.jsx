@@ -1,21 +1,26 @@
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import "../Style.scss";
 
 const IconButton = (props) => {
-  const { className, buttonName, icon, path, style } = props;
+  const { icon, buttonName, path, backgroundColor, textColor } = props;
   return (
     <>
       <Button
         component={Link}
         to={path}
-        color="secondary"
-        disableElevation
-        underline
-        className={className}
-        size="large"
-        style={style}
+        style={{
+          backgroundColor: backgroundColor,
+          textTransform: "none",
+          fontstyle: "normal",
+          fontweight: 400,
+          fontsize: 14,
+          lineheight: 14,
+          textColor: textColor,
+        }}
       >
-        {icon}
+        <img src={icon} />
+
         <span>{buttonName}</span>
       </Button>
     </>
