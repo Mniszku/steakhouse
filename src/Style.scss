@@ -1,0 +1,113 @@
+.container{
+background-color: #E5E5E5;
+}
+.navigation{
+background-color: #FFFFFF;
+}
+.logo{
+position: absolute;
+width: 48px;
+height: 47px;
+left: 148.5px;
+top: 16px;
+}
+
+.first,.second,.third,.fourth,.fifth,.sixth,.seventh,.eighth,.ninth{
+font-family: 'Sofia Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 32px;
+text-decoration: none;
+color: #000000;
+}
+.first{
+position: absolute;
+width: 42px;
+height: 32px;
+left: 265px;
+top: 27px;
+}
+.second{
+    position: absolute;
+    width: 50px;
+    height: 32px;
+    left: 360px;
+    top: 27px;
+}
+.third{
+    position: absolute;
+width: 75px;
+height: 32px;
+left: 462px;
+top: 27px;
+}
+.fourth{
+    position: absolute;
+width: 40px;
+height: 32px;
+left: 590px;
+top: 27px;
+}
+.fifth{
+    position: absolute;
+width: 114px;
+height: 32px;
+left: 682px;
+top: 27px;
+}
+.sixth{
+    position: absolute;
+width: 49px;
+height: 32px;
+left: 846px;
+top: 27px;
+}
+.seventh{
+    position: absolute;
+    width: 72px;
+    height: 14px;
+    left: 1482.5px;
+    top: 43px;
+}
+.eighth{
+    position: absolute;
+    width: 44px;
+    height: 14px;
+    left: 1597px;
+    top: 43px;
+}
+.ninth{
+    position: absolute;
+    width: 97px;
+    height: 57px;
+    left: 1680px;
+    top: 12px;    
+    background: #920303;
+    border: white;
+    border-radius: 10px;
+}
+.button-text{
+    color: white;
+font-size: 14px;
+height: 14px;
+left: 25.26%;
+right: 25.26%;
+top: calc(50% - 14px/2 + 9.5px);
+}
+.koszyk{
+    position: absolute;
+    width: 18px;
+    height: 12.8px;
+    left: 1605px;
+    top: 34px;
+    
+}
+.konto{
+    position: absolute;
+    width: 14px;
+    height: 12.8px;
+    left: 1512px;
+    top: 34px;
+    
+}
