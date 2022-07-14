@@ -1,68 +1,27 @@
-.container{
-background-color: #E5E5E5;
+@font-face {
+    font-family: "Light";   
+    src: local("SofiaPro"),
+      url("./Font/SofiaPro.ttf") format("truetype");
+  }
+.text-container{
+  display:inline-flex;
 }
-.navigation{
-background-color: #FFFFFF;
+.text-first{
+font-family: 'Sofia Pro';
+text-align: center;
+width: 250px;
+height: 44px;
+font-weight: 700;
+font-size: 36px;
+background-color: black;
+color: white;
 }
-.logo{
-position: absolute;
-width: 48px;
-height: 47px;
-left: 148.5px;
-top: 16px;
-}
-
-.first,.second,.third,.fourth,.fifth,.sixth,.seventh,.eighth,.ninth{
+.text-first2{
 font-family: 'Sofia Pro';
 font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 32px;
-text-decoration: none;
-color: #000000;
+font-weight: 700;
+font-size: 30px;
 }
-.first{
-position: absolute;
-width: 42px;
-height: 32px;
-left: 265px;
-top: 27px;
+.text-uber{
+  color: white;
 }
-.second{
-    position: absolute;
-    width: 50px;
-    height: 32px;
-    left: 360px;
-    top: 27px;
-}
-.third{
-    position: absolute;
-width: 75px;
-height: 32px;
-left: 462px;
-top: 27px;
-}
-.fourth{
-    position: absolute;
-width: 40px;
-height: 32px;
-left: 590px;
-top: 27px;
-}
-.fifth{
-    position: absolute;
-width: 114px;
-height: 32px;
-left: 682px;
-top: 27px;
-}
-.sixth{
-    position: absolute;
-width: 49px;
-height: 32px;
-left: 846px;
-top: 27px;
-}
-
-
-
