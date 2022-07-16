@@ -8,15 +8,6 @@ import "swiper/css/autoplay";
 import White from "../White/white.png";
 import MediaCard from "../MediaCard";
 
-const rand = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
-
-const imgUrl = () => {
-  const id = rand(1, 200);
-  return `https://picsum.photos/id/${id}/1920/1080`;
-};
-
 const createSlide = () => {
   return (
     <SwiperSlide>
