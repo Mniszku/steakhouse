@@ -6,9 +6,8 @@ import KoszykImage from "./KoszykImage/koszyk.svg";
 import MenuButton from "./MenuButton";
 import ZamowIcon from "./ZamowIcon/zamow_ikona.svg";
 import MojeKont from "./MojeKonto/mojekonto.svg";
-import SwiperCard from "./SwiperCard";
-import Uber from "./Uber";
-import Set from "./Set";
+import AutoPlay from "./AutoPlay/AutoPlay";
+import MediaCard from "./MediaCard";
 import Box from "@mui/material/Box";
 import Steak from "./Steak";
 import UberLogo from "./Partners/Bitmap-2.png";
@@ -16,25 +15,12 @@ import BoltFood from "./Partners/Bitmap-3.png";
 import Glovo from "./Partners/Bitmap.png";
 import DeliGoo from "./Partners/e.png";
 import Pyszne from "./Partners/Bitmap-4.png";
-// import Swiper from "react-id-swiper";
+import UberEats from "./UberEats/aplikacja.png";
+import IconButton from "@mui/material/IconButton";
+import SvgIcon from "@mui/material/SvgIcon";
+import FourKIcon from "@mui/icons-material/FourK";
+import SetImage from "./SetImage/dana-devolk-x2cNcfz_xXU-unsplash.png";
 const Home = () => {
-  // const params = {
-  //   spaceBetween: 30,
-  //   centeredSlides: true,
-  //   autoplay: {
-  //     delay: 2500,
-  //     disableOnInteraction: false,
-  //   },
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //   },
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  // };
-
   return (
     <>
       <Grid
@@ -50,37 +36,37 @@ const Home = () => {
         </Grid>
         <Grid item xs={7}>
           <MenuButton
-            width={110}
+            width={105}
             color={"#000000"}
             path={"/"}
             buttonName={"Steak"}
           />
           <MenuButton
-            width={110}
+            width={105}
             color={"#000000"}
             path={"/"}
             buttonName={"Burgers"}
           />
           <MenuButton
-            width={110}
+            width={105}
             color={"#000000"}
             path={"/"}
             buttonName={"French fries"}
           />
           <MenuButton
-            width={110}
+            width={105}
             color={"#000000"}
             path={"/"}
             buttonName={"Drinks"}
           />
           <MenuButton
-            width={125}
+            width={136}
             color={"#000000"}
             path={"/"}
             buttonName={"Gdzie dowozimy?"}
           />
           <MenuButton
-            width={110}
+            width={105}
             color={"#000000"}
             path={"/"}
             buttonName={"Kontakt"}
@@ -108,15 +94,11 @@ const Home = () => {
           />
         </Grid>
       </Grid>
-
-      {/* <Swiper {...params}>
-            <div>Slide #1</div>
-            <div>Slide #2</div>
-            <div>Slide #3</div>
-          </Swiper> */}
-      <Box sx={{ width: "100%" }}>
-        <Grid container spacing={24}>
-          <Grid item xs={6} sm={6}></Grid>
+      <Box sx={{ marginTop: 2, width: "100%" }}>
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Grid item xs={6} sm={6}>
+            <AutoPlay />
+          </Grid>
           <Grid item xs={6} sm={6}>
             <Steak />
           </Grid>
@@ -125,33 +107,116 @@ const Home = () => {
           container
           alignContent="center"
           alignItems="center"
-          justify="flex-start"
+          justifyContent="space-evenly"
           sx={{ mt: 2 }}
         >
-          <Grid item xs={1}></Grid>
-          <Grid item xs={2}>
+          <Grid item xs={2}></Grid>
+          <Grid item xs={1}>
             <img src={Pyszne} />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={1}>
             <img src={DeliGoo} />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={1}>
             <img src={Glovo} />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={1}>
             <img src={UberLogo} />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={1}>
             <img src={BoltFood} />
           </Grid>
-          <Grid item xs={1}></Grid>
+          <Grid item xs={2}></Grid>
         </Grid>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={6}>
-            <Set />
+            <MediaCard
+              title="Zestaw dla 3 osób"
+              backgroundImage={SetImage}
+              text={
+                <>
+                  <span
+                    style={{
+                      color: "white",
+                    }}
+                  >
+                    Razem smakuje lepiej! Zamów
+                  </span>
+                  <br></br>
+                  <span
+                    style={{
+                      color: "white",
+                    }}
+                  >
+                    zestawy obiadowy dla 3 osób
+                  </span>
+                  <br></br>
+                  <div>
+                    <span
+                      style={{
+                        color: "white",
+                      }}
+                    >
+                      już od
+                    </span>
+                    <span
+                      style={{
+                        color: "white",
+                        backgroundColor: "black",
+                      }}
+                    >
+                      39 zł
+                    </span>
+                  </div>
+                </>
+              }
+            />
           </Grid>
           <Grid item xs={6}>
-            <Uber />
+            <MediaCard
+              IconButtons={
+                <div style={{ display: "inline" }}>
+                  <IconButton>
+                    <SvgIcon color="primary" component={FourKIcon} />
+                  </IconButton>
+                  <IconButton>
+                    <SvgIcon color="primary" component={FourKIcon} />
+                  </IconButton>
+                  <IconButton>
+                    <SvgIcon color="primary" component={FourKIcon} />
+                  </IconButton>
+                </div>
+              }
+              title="UberEats"
+              backgroundImage={UberEats}
+              text={
+                <>
+                  <span
+                    style={{
+                      color: "white",
+                    }}
+                  >
+                    Zamawiaj w aplikacji
+                  </span>
+                  <span
+                    style={{
+                      color: "white",
+                      backgroundColor: "#920303",
+                    }}
+                  >
+                    10% taniej.
+                  </span>
+                  <br></br>
+                  <span
+                    style={{
+                      color: "white",
+                    }}
+                  >
+                    Pobierz aplikację UberEats już dziś.
+                  </span>{" "}
+                </>
+              }
+            />
           </Grid>
         </Grid>
       </Box>

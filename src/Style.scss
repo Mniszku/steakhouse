@@ -1,27 +1,5 @@
 @font-face {
-    font-family: "Light";   
+    font-family: "SofiaPro";   
     src: local("SofiaPro"),
       url("./Font/SofiaPro.ttf") format("truetype");
   }
-.text-container{
-  display:inline-flex;
-}
-.text-first{
-font-family: 'Sofia Pro';
-text-align: center;
-width: 250px;
-height: 44px;
-font-weight: 700;
-font-size: 36px;
-background-color: black;
-color: white;
-}
-.text-first2{
-font-family: 'Sofia Pro';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-}
-.text-uber{
-  color: white;
-}

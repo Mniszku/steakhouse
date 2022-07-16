@@ -13,7 +13,7 @@ const MenuButton = (props) => {
         to={path}
         style={{
           backgroundColor: backgroundColor,
-          fontFamily: "Sofia Pro",
+          fontFamily: "SofiaPro",
           textTransform: "none",
           fontstyle: "normal",
           fontweight: 400,
@@ -34,7 +34,7 @@ const MenuButton = (props) => {
           alignItems="baseline"
         >
           <Grid item xs={12}>
-            <img src={icon} />
+            <img src={icon} alt="" />
           </Grid>
           <Grid item xs={12}>
             <span>{buttonName}</span>
