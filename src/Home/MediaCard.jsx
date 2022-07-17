@@ -15,34 +15,33 @@ const MediaCard = (props) => {
             style={{ height: "100%" }}
             component="img"
             src={backgroundImage}
-            title="Pancakes"
-            alt="Pancakes"
           />
-
           <div
             style={{
               position: "absolute",
               color: "white",
-              width: 300,
-              top: 82,
-              left: 270,
+              width: 320,
+              top: "3vw",
+              left: "6vw",
               fontFamily: "SofiaPro",
               fontStyle: "normal",
               fontWeight: 700,
-              fontSize: 35,
-              transform: "translateX(-50%)",
+              fontSize: "2vw",
+              //transform: "translateX(-50%)",
             }}
           >
             {title}
           </div>
+
           <div
             style={{
               position: "absolute",
               display: "inline-block",
               fontFamily: "SofiaPro",
               fontWeight: 400,
-              top: 150,
-              left: 120,
+              fontSize: "1vw",
+              top: "8vw",
+              left: "6vw",
             }}
           >
             {text}
@@ -50,7 +49,7 @@ const MediaCard = (props) => {
             {IconButtons}
             <div
               style={{
-                marginTop: 70,
+                marginTop: "1vw",
               }}
             >
               <Button
@@ -59,16 +58,16 @@ const MediaCard = (props) => {
                   background: "#920303",
                   borderRadius: 10,
                   border: "none",
-                  height: 49,
-                  width: 204,
+                  height: "2vw",
+                  width: "10vw",
                   color: "white",
+                  fontSize: "0.7vw",
                 }}
               >
-                Zamow online
+                Zamów online
               </Button>
             </div>
           </div>
-          <div></div>
         </div>
       </Card>
     </>

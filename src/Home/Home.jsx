@@ -16,10 +16,11 @@ import Glovo from "./Partners/Bitmap.png";
 import DeliGoo from "./Partners/e.png";
 import Pyszne from "./Partners/Bitmap-4.png";
 import UberEats from "./UberEats/aplikacja.png";
-import IconButton from "@mui/material/IconButton";
-import SvgIcon from "@mui/material/SvgIcon";
-import FourKIcon from "@mui/icons-material/FourK";
 import SetImage from "./SetImage/dana-devolk-x2cNcfz_xXU-unsplash.png";
+import AppStore from "../Image/App_Store_(iOS).svg";
+import Huawei from "../Image/huawei.svg";
+import GooglePlay from "../Image/Group 4.svg";
+
 const Home = () => {
   return (
     <>
@@ -32,7 +33,7 @@ const Home = () => {
       >
         <Grid item xs={1}></Grid>
         <Grid item xs={1}>
-          <img src={Image} />
+          <img src={Image} alt="" />
         </Grid>
         <Grid item xs={7}>
           <MenuButton
@@ -112,19 +113,19 @@ const Home = () => {
         >
           <Grid item xs={2}></Grid>
           <Grid item xs={1}>
-            <img src={Pyszne} />
+            <img src={Pyszne} alt="" />
           </Grid>
           <Grid item xs={1}>
-            <img src={DeliGoo} />
+            <img src={DeliGoo} alt="" />
           </Grid>
           <Grid item xs={1}>
-            <img src={Glovo} />
+            <img src={Glovo} alt="" />
           </Grid>
           <Grid item xs={1}>
-            <img src={UberLogo} />
+            <img src={UberLogo} alt="" />
           </Grid>
           <Grid item xs={1}>
-            <img src={BoltFood} />
+            <img src={BoltFood} alt="" />
           </Grid>
           <Grid item xs={2}></Grid>
         </Grid>
@@ -176,15 +177,36 @@ const Home = () => {
             <MediaCard
               IconButtons={
                 <div style={{ display: "inline" }}>
-                  <IconButton>
-                    <SvgIcon color="primary" component={FourKIcon} />
-                  </IconButton>
-                  <IconButton>
-                    <SvgIcon color="primary" component={FourKIcon} />
-                  </IconButton>
-                  <IconButton>
-                    <SvgIcon color="primary" component={FourKIcon} />
-                  </IconButton>
+                  <br></br>
+                  <input
+                    style={{
+                      height: "1.5vw",
+                      width: "1.5vw",
+                      marginRight: "1vw",
+                    }}
+                    type="image"
+                    src={GooglePlay}
+                    alt=""
+                  ></input>
+                  <input
+                    style={{
+                      height: "1.5vw",
+                      width: "1.5vw",
+                      marginRight: "1vw",
+                    }}
+                    type="image"
+                    src={AppStore}
+                    alt=""
+                  ></input>
+                  <input
+                    style={{
+                      height: "1.5vw",
+                      width: "1.5vw",
+                    }}
+                    type="image"
+                    src={Huawei}
+                    alt=""
+                  ></input>
                 </div>
               }
               title="UberEats"
