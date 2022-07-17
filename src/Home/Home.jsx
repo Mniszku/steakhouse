@@ -111,23 +111,25 @@ const Home = () => {
           justifyContent="space-evenly"
           sx={{ mt: 2 }}
         >
-          <Grid item xs={2}></Grid>
-          <Grid item xs={1}>
+          <Grid item xs={1} sm={1} md={4} lg={1} xl={1}></Grid>
+          <Grid item xs={1} sm={1} md={4} lg={1} xl={1}></Grid>
+          <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
             <img src={Pyszne} alt="" />
           </Grid>
-          <Grid item xs={1}>
+          <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
             <img src={DeliGoo} alt="" />
           </Grid>
-          <Grid item xs={1}>
+          <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
             <img src={Glovo} alt="" />
           </Grid>
-          <Grid item xs={1}>
+          <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
             <img src={UberLogo} alt="" />
           </Grid>
-          <Grid item xs={1}>
+          <Grid item xs={12} sm={4} md={2} lg={2} xl={2}>
             <img src={BoltFood} alt="" />
           </Grid>
-          <Grid item xs={2}></Grid>
+          <Grid item xs={1} sm={1} md={4} lg={1} xl={1}></Grid>
+          <Grid item xs={1} sm={1} md={4} lg={1} xl={1}></Grid>
         </Grid>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={6}>
@@ -182,7 +184,7 @@ const Home = () => {
                     style={{
                       height: "1.5vw",
                       width: "1.5vw",
-                      marginRight: "1vw",
+                      marginRight: "0.7vw",
                     }}
                     type="image"
                     src={GooglePlay}
@@ -192,7 +194,7 @@ const Home = () => {
                     style={{
                       height: "1.5vw",
                       width: "1.5vw",
-                      marginRight: "1vw",
+                      marginRight: "0.7vw",
                     }}
                     type="image"
                     src={AppStore}
